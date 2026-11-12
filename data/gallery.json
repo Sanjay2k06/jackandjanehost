@@ -30,13 +30,5 @@
     "description": "A child exploring a colourful movement and coordination activity.",
     "visible": true,
     "order": 4
-  },
-  {
-    "id": "photo-ea25365a-69c0-4c76-93f2-119e0a5ec017",
-    "src": "assets/gallery/photo-ea25365a-69c0-4c76-93f2-119e0a5ec017.webp",
-    "title": "demo",
-    "description": "just for demo ",
-    "visible": true,
-    "order": 5
   }
 ]
