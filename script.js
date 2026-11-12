@@ -726,15 +726,15 @@ window.addEventListener("message", (event) => {
 });
 
 Promise.all([
-  fetch("data/content.json").then((response) => {
+  fetch("data/content.json", { cache: "no-store" }).then((response) => {
     if (!response.ok) throw new Error(`Content request failed (${response.status}).`);
     return response.json();
   }),
-  fetch("data/branches.json").then((response) => {
+  fetch("data/branches.json", { cache: "no-store" }).then((response) => {
     if (!response.ok) throw new Error(`Branch request failed (${response.status}).`);
     return response.json();
   }),
-  fetch("data/gallery.json").then((response) => {
+  fetch("data/gallery.json", { cache: "no-store" }).then((response) => {
     if (!response.ok) throw new Error(`Gallery request failed (${response.status}).`);
     return response.json();
   }),

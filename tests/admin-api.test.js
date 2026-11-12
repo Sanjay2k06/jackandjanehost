@@ -254,6 +254,44 @@ test("commits an optimized gallery upload with the matching JSON in one tree", a
   assert.equal(tree.tree.length, 4);
 });
 
+test("removes a deleted gallery entry and its unreferenced upload asset in one commit", async () => {
+  const imagePath = "assets/gallery/photo-to-remove.webp";
+  const gallery = galleryFixture.concat({
+    id: "photo-to-remove",
+    src: imagePath,
+    title: "Removed activity",
+    description: "Activity staged for removal.",
+    visible: true,
+    order: 5,
+  });
+  const files = {
+    "data/content.json": contentFixture,
+    "data/branches.json": branchesFixture,
+    "data/gallery.json": gallery,
+  };
+  const mock = mockGitHub(files, false, { [imagePath]: "5".repeat(40) });
+  const response = createMockResponse();
+  await contentHandler(adminRequest({
+    content: contentFixture,
+    branches: branchesFixture,
+    gallery: galleryFixture,
+    version: {
+      ...mock.latestShas,
+      [imagePath]: mock.assetShas[imagePath],
+    },
+  }), response);
+  assert.equal(response.statusCode, 200, response.body);
+  const treeCall = mock.calls.find((call) => call.url.pathname.endsWith("/git/trees"));
+  const tree = JSON.parse(treeCall.options.body);
+  assert.equal(tree.tree.some((entry) => entry.path === "data/gallery.json" && entry.sha), true);
+  assert.deepEqual(tree.tree.find((entry) => entry.path === imagePath), {
+    path: imagePath,
+    mode: "100644",
+    type: "blob",
+    sha: null,
+  });
+});
+
 test("reports the Vercel state for the exact committed GitHub SHA", async () => {
   process.env.VERCEL_TOKEN = "test-vercel-token";
   process.env.VERCEL_PROJECT_ID = "test-project";
