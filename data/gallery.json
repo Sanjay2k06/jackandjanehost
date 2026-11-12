@@ -1,0 +1,34 @@
+[
+  {
+    "id": "children-artwork",
+    "src": "imagees/WhatsApp Image 2026-10-06 at 11.21.32 AM.jpeg",
+    "title": "Sharing their artwork",
+    "description": "Children proudly showing their artwork during an activity at the centre.",
+    "visible": true,
+    "order": 1
+  },
+  {
+    "id": "breathing-activity",
+    "src": "imagees/WhatsApp Image 2026-10-06 at 11.21.34 AM (1).jpeg",
+    "title": "A breathing activity",
+    "description": "A child practising a breathing activity with supportive equipment.",
+    "visible": true,
+    "order": 2
+  },
+  {
+    "id": "sensory-activity",
+    "src": "imagees/WhatsApp Image 2026-10-06 at 11.21.34 AM (2).jpeg",
+    "title": "Hands-on sensory play",
+    "description": "A child exploring a hands-on sensory activity.",
+    "visible": true,
+    "order": 3
+  },
+  {
+    "id": "movement-activity",
+    "src": "imagees/WhatsApp Image 2026-10-06 at 11.21.34 AM.jpeg",
+    "title": "Move, notice, discover",
+    "description": "A child exploring a colourful movement and coordination activity.",
+    "visible": true,
+    "order": 4
+  }
+]

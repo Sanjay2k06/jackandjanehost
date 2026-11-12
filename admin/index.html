@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#183d34">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin | Jack &amp; Jane Developmental Centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/admin.css">
+    <script src="/admin/admin.js" defer></script>
+  </head>
+  <body>
+    <main class="login-shell" id="login-screen" hidden>
+      <a class="login-brand" href="/" aria-label="Jack and Jane admin console">
+        <img class="admin-brand-logo" src="/admin/admin-mark.svg" alt="">
+        <span><strong>Jack &amp; Jane</strong><small>ADMIN CONSOLE</small></span>
+      </a>
+      <section class="login-card" aria-labelledby="login-title">
+        <p class="eyebrow">Private workspace</p>
+        <h1 id="login-title">Administrator sign in</h1>
+        <p class="login-intro">Sign in to manage published website content.</p>
+        <form id="login-form">
+          <label for="login-username">Username</label>
+          <input id="login-username" name="username" autocomplete="username" required>
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+          <p class="form-message" id="login-message" role="alert" hidden></p>
+          <button class="button button--primary" type="submit">Sign in</button>
+        </form>
+        <a class="back-link" href="/">Return to the public website</a>
+      </section>
+      <p class="login-footnote">Authorized administrators only</p>
+    </main>
+
+    <div class="app-shell" id="admin-app" hidden>
+      <aside class="sidebar" id="sidebar">
+        <a class="sidebar-brand" href="/" aria-label="Return to public website">
+          <img class="admin-brand-logo" src="/admin/admin-mark.svg" alt="">
+          <span><strong>Jack &amp; Jane</strong><small>ADMIN CONSOLE</small></span>
+        </a>
+        <p class="sidebar-label">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Admin sections">
+          <button class="side-link is-active" type="button" data-view="overview"><span class="nav-indicator"></span>Overview</button>
+          <button class="side-link" type="button" data-view="website"><span class="nav-indicator"></span>Website content</button>
+          <button class="side-link" type="button" data-view="branches"><span class="nav-indicator"></span>Branches</button>
+          <button class="side-link" type="button" data-view="gallery"><span class="nav-indicator"></span>Photo gallery</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <a href="/" target="_blank" rel="noopener noreferrer">View public website <span aria-hidden="true">↗</span></a>
+          <p>Changes are published to GitHub and deployed by Vercel.</p>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobile-menu" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="Open dashboard navigation"><span></span><span></span></button>
+          <div class="breadcrumb"><span>Jack &amp; Jane</span><span class="breadcrumb-divider">/</span><strong id="view-title">Overview</strong></div>
+          <div class="top-actions">
+            <span class="save-state" id="save-state">All changes saved</span>
+            <button class="button button--quiet" id="preview-button" type="button">Preview changes</button>
+            <button class="button button--primary" id="save-button" type="button">Save changes</button>
+            <button class="logout-button" id="logout-button" type="button">Log out</button>
+          </div>
+        </header>
+        <div class="workspace-content">
+          <div class="notice" id="notice" role="status" hidden></div>
+          <section class="deployment-card" id="deployment-card" hidden aria-live="polite">
+            <span class="deployment-mark" aria-hidden="true"></span>
+            <div><strong id="deployment-title">Deployment status</strong><p id="deployment-message"></p></div>
+            <a id="deployment-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Open deployment</a>
+          </section>
+          <div id="view-panel"></div>
+        </div>
+      </div>
+    </div>
+
+    <dialog class="preview-dialog" id="preview-dialog" aria-label="Preview website changes">
+      <div class="preview-toolbar">
+        <div><strong>Unpublished preview</strong><span>Changes are not committed or visible to visitors.</span></div>
+        <button class="icon-button" id="close-preview" type="button" aria-label="Close preview">Close preview</button>
+      </div>
+      <iframe id="preview-frame" title="Preview of unpublished website changes"></iframe>
+    </dialog>
+  </body>
+</html>

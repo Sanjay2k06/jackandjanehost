@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "heading": "Every little step.",
+    "emphasis": "A brighter tomorrow.",
+    "description": "At Jack & Jane Developmental Centre, we nurture each child's strengths through individualised developmental support, meaningful learning experiences, and guidance for families.",
+    "tagline": "Care with Confidence."
+  },
+  "company": {
+    "name": "Jack & Jane",
+    "fullName": "Jack & Jane Developmental Centre",
+    "location": "Chennai, Tamil Nadu"
+  },
+  "about": {
+    "eyebrow": "A thoughtful start",
+    "heading": "Helping children grow",
+    "emphasis": "with confidence",
+    "paragraphs": [
+      "Jack & Jane Developmental Centre provides individualised developmental support designed around each child's needs, strengths, and learning style.",
+      "We work towards building essential developmental skills through structured activities, communication support, sensory experiences, play-based learning, and practical guidance for parents.",
+      "Our goal is to create a warm and supportive environment where children can explore, learn, develop confidence, and participate more independently in everyday life."
+    ],
+    "values": [
+      "Individualised support",
+      "Learning through play",
+      "Family involvement",
+      "Confidence & independence"
+    ]
+  },
+  "services": [
+    {
+      "title": "Behaviour Modification Program",
+      "description": "Our Behaviour Modification Program helps children develop positive behaviours and reduce challenging behaviours through structured, individualised strategies. The program focuses on improving attention, communication, social behaviour, emotional regulation, and daily routines.",
+      "symbol": "arrow-up-right"
+    },
+    {
+      "title": "IQ Enhancement Program",
+      "description": "Our IQ Enhancement Program is designed to strengthen cognitive abilities such as attention, memory, logical thinking, problem-solving, reasoning, and learning skills through age-appropriate and engaging activities.",
+      "symbol": "sparkle"
+    },
+    {
+      "title": "Speech & Communication Support",
+      "description": "We support children in developing functional communication, vocabulary, listening skills, understanding, expression, and social communication. Activities are planned according to each child's individual communication needs.",
+      "symbol": "speech"
+    },
+    {
+      "title": "Play Therapy",
+      "description": "Play Therapy provides children with a safe and engaging environment to express themselves, develop social interaction, improve communication, build confidence, and learn through play-based activities.",
+      "symbol": "play"
+    },
+    {
+      "title": "Early Intervention Program",
+      "description": "Our Early Intervention Program focuses on developing essential developmental skills during the early years. Activities may include fine motor skills, gross motor skills, sensory activities, attention, imitation, communication, and Activities of Daily Living (ADL).",
+      "symbol": "arrow-up-right"
+    },
+    {
+      "title": "Sensory Integration & Developmental Activities",
+      "description": "Sensory-based activities help children improve body awareness, attention, coordination, regulation, and participation in daily activities through structured and meaningful experiences.",
+      "symbol": "sensory"
+    },
+    {
+      "title": "School Readiness Program",
+      "description": "Our School Readiness Program prepares children for a successful transition to school by developing pre-writing, handwriting, early reading, attention, classroom behaviour, following instructions, and independent learning skills.",
+      "symbol": "home"
+    },
+    {
+      "title": "Social Skills Training",
+      "description": "We help children develop essential social skills such as sharing, turn-taking, greetings, eye contact, waiting, following social rules, initiating interaction, and participating appropriately with peers.",
+      "symbol": "heart"
+    },
+    {
+      "title": "Parent Counselling & Guidance",
+      "description": "We provide parents with practical guidance and strategies to understand their child's behaviour, communication, developmental needs, and learning patterns, helping them support their child's progress at home.",
+      "symbol": "sun"
+    }
+  ],
+  "contact": {
+    "phone": "+91 73972 71374",
+    "email": "jackandjanedevelopmeralcentre@gmail.com",
+    "whatsappNumber": "917397271374",
+    "intro": "Have questions about our programs or centres? Get in touch with us to discuss your child's developmental support needs and learn more about the available services.",
+    "mapUrl": "https://www.google.com/maps/place/Jack+and+Jane+developmental+center/@12.9650035,80.254182,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525d982b3c3ddf:0xa302f3ba93eecda0!8m2!3d12.9650035!4d80.2567569!16s%2Fg%2F11yqqgjs_1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=12.9650035%2C80.2567569&z=16&output=embed"
+  },
+  "footer": {
+    "tagline": "Care with Confidence.",
+    "beliefLines": [
+      "Every child is unique.",
+      "Every child can learn."
+    ],
+    "closing": "Made for little steps & big possibilities."
+  }
+}
